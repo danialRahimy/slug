@@ -1,6 +1,6 @@
 <?php
 
-namespace Danialrahimy\Slug;
+namespace DanialRahimy\Slug;
 
 class Slug
 {

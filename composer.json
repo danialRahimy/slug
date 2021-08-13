@@ -6,7 +6,8 @@
     "authors": [
         {
             "name": "Danial Rahimy",
-            "email": "daniel_rahimi@outlook.com"
+            "email": "daniel_rahimi@outlook.com",
+            "homepage": "https://danialrahimy.ir"
         }
     ],
     "minimum-stability": "stable",
@@ -15,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Danialrahimy\\Meta\\": "src/"
+            "DanialRahimy\\Slug\\": "src/"
         }
     }
 }
