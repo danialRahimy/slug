@@ -71,8 +71,6 @@ class Slug
         if (!is_string($output))
             $output = '';
 
-        $output = strtolower($output);
-
         return trim($output, $this->divider);
     }
 }
