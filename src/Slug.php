@@ -10,7 +10,7 @@ class Slug
     public function __construct()
     {
         $this->slugAble = [
-            ' ', "\n", "\r", ",", "،", '¬', 'å', '؛', '/', '\\', '!', '?', '؟', '‌'
+            ' ', "\n", "\r", ",", "،", '¬', 'å', '؛', '/', '\\', '!', '?', '؟', '‌', '"', '\''
         ];
     }
 
@@ -72,5 +72,17 @@ class Slug
             $output = '';
 
         return trim($output, $this->divider);
+    }
+
+    /**
+     * @param string $input
+     * @param string $replace
+     * @return string
+     */
+    public function reverse(string $input, string $replace = ' '): string
+    {
+        $output = str_replace($this->divider, $replace, $input);;
+
+        return trim($output, $replace . ' \t\n\r\0\x0B');
     }
 }
